@@ -12,31 +12,74 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body {
+            background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(./Images/background-image.jpg);
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color:brown">
+    <nav class="navbar navbar-expand-lg " style="background-color: #2F1710">
         <div class="container-fluid">
           <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav m-auto my-lg-3">
-              <li class="nav-item  ">
-                <a class="nav-link active text-muted px-lg-5" aria-current="page" href="#">Home</a>
+            <ul class="navbar-nav m-auto my-lg-3 " style="font-weight: 800;">
+              <li class="nav-item  px-lg-4 ">
+                <a class="nav-link active text-muted"  href="#">Home</a>  <!-- aria-current="page" -->
               </li>
-              <li class="nav-item  ">
+              <li class="nav-item  px-lg-4">
                 <a class="nav-link text-muted" href="#">ABOUT</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item px-lg-4">
                 <a class="nav-link text-muted" href="#">PRODUCTS</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item px-lg-4">
                 <a class="nav-link text-muted" href="#">STORE</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <section class="home">
+          <div class="container"><br>
+              <div class="row">
+                  <div class="col-lg-3 bg-danger ">
+                    <div class="card text-center ">
+                        <div class="card-header bg-light border border-light">FRESH COFFEE</div>
+                        <div class="card-body">
+                            <h5 class="card-title">WORTH DRINKING</h5>
+                            <p class="card-text">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                            <a href="#" class="btn btn-primary">Visit Us Today!</a>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-9 bg-warning my-lg-5">
+                    <img src="./Images/intro.jpg" class="img-fluid" alt="into" >
+                </div>
+              </div>
+          </div>
+      </section>
+      <br>
+      <section class="about">
+          <div class="container-fluid my-lg-5" style="background-color: #D4994F;"> <br> <br> <br>
+                <div class="card text-center d-block mx-auto w-50 p-lg-" style="background-color: #96928e;border: 4px solid rgb(250, 250, 202);">
+                      <p class="mt-lg-5 mb-lg-0">OUR PROMISE</p>
+                      <div class="card-body pt-lg-0 mx-lg-3">
+                          <h5 class="card-title display-5 ">TO YOU</h5>
+                          <p class="card-text my-lg-4">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+                      </div>
+                </div><br> <br> <br>
+          </div>
+      </section> <br>   <br>
+
+      <footer>
+          <div class="container-fluid" style="background-color: #D4994F;">
+              <p class="py-lg-5 text-center mb-lg-0" >Copyright © Your Website 2021</p>
+          </div>
+      </footer>
+
 </body>
 </html>
