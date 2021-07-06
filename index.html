@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Bootstrap template</title>
     <style>
         * {
@@ -15,71 +16,112 @@
         body {
             background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(./Images/background-image.jpg);
         }
+        .nav-link {
+          color:rgba(255, 255, 255, 0.7);
+        }
+        .nav-link:hover {
+          color:rgb(136, 112, 112);
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #2F1710">
-        <div class="container-fluid">
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav m-auto my-lg-3 " style="font-weight: 800;">
-              <li class="nav-item  px-lg-4 ">
-                <a class="nav-link active text-muted"  href="#">Home</a>  <!-- aria-current="page" -->
-              </li>
-              <li class="nav-item  px-lg-4">
-                <a class="nav-link text-muted" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-muted" href="#">PRODUCTS</a>
-              </li>
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-muted" href="#">STORE</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <section class="home">
-          <div class="container"><br>
+
+      <nav class="navbar navbar-expand-lg  py-lg-4 mb-5 " style="background-color: rgba(47, 23, 15, 0.9);">
+        <div class="container  ">
+            <ul class="navbar-nav mx-auto text-white" style="font-weight: 800; ">
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase  " href="">Home</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase " href="">About</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase " href="">Products</a>
+                </li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase " href="">Store</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+      <section class="home my-lg-5">
+          <div class="container ">
               <div class="row">
-                  <div class="col-lg-3 bg-danger ">
-                    <div class="card text-center ">
-                        <div class="card-header bg-light border border-light">FRESH COFFEE</div>
+                  <div class="col-lg-4" style="margin-top: 6rem; width: 25%; z-index: 10;height:30%;" data-aos="fade-right">
+                    <div class="card text-center " style="background-color: #F6E1C5;">
+                        <div class="">FRESH COFFEE</div>
                         <div class="card-body">
                             <h5 class="card-title">WORTH DRINKING</h5>
                             <p class="card-text">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
-                            <a href="#" class="btn btn-primary">Visit Us Today!</a>
+                            <a href="#" class="btn btn-primary" >Visit Us Today!</a>
                         </div>
                     </div>
+
+                    <!-- <div class="text-center rounded p-lg-5" style=" background-color: #F6E1C5;">
+                      <div class=" p-lg-5">
+                        <p class="mb-lg-0" style="font-weight: bold;">FRESH COFFEE</p>
+                        <h1 class="  mb-lg-4 display-4 font-weight-light">WORTH DRINKING</h1>
+                        <p class=" ">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                        
+                      </div>
+                      <a href="#" class="btn btn-primary  text-dark mt-lg-n5"  style="background-color: rgba(230, 167, 86, 0.9);">Visit Us Today!</a>
+                    </div> -->
                   </div>
-                  
-                  <div class="col-lg-9 bg-warning my-lg-5">
+
+                  <!-- <div data-aos="fade-right" class="  col-xl-4  mr-n5 mt-5 ml-2 text-center " class="col-sm-12 "
+                style=" z-index: 10;;background-color: #f6e1c5; height:30%; ">
+                <div class="card text-dark ml-auto border border-light"
+                    style="width: 100%; height: fit-content;background-color: #f6e1c5; border: #f6e1c5;">
+                    <h1 class="section-heading-upper py-lg-2 font-size:1rem fw-bolder "
+                        style="font-size: 1rem; background-color: #f6e1c5;"> FRESH COFFEE</h1>
+                    <h2 class="section-heading-lower  display-6" style="display: block;font-size: 3rem; ">WORTH DRINKING
+                    </h2>
+
+                    <p class="mb-3"
+                        style="display: block;  margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">
+                        Every cup of our quality artisan coffee starts with locally sourced, hand picked
+                        ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning
+                        routine - we guarantee it</p>
+                </div>
+                <div class="mb-lg-n4"><a class="btn btn-primary btn-xl pt-1 mt-1"
+                        style="font-weight: 700; font-size: 0.8rem; padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 2rem; padding-right: 2rem; color: black; background-color: #e6a756;border-color: #e6a756;  "
+                        href="#!">Visit Us Today!</a> </div>
+            </div> -->
+                  <div  class="col-sm-12 col-xl-8 mr-n5" data-aos="fade-left">
+
+                  <!-- <div class="col-lg-9 my-lg-5"> -->
                     <img src="./Images/intro.jpg" class="img-fluid" alt="into" >
                 </div>
               </div>
           </div>
       </section>
-      <br>
-      <section class="about">
-          <div class="container-fluid my-lg-5" style="background-color: #D4994F;"> <br> <br> <br>
-                <div class="card text-center d-block mx-auto w-50 p-lg-" style="background-color: #96928e;border: 4px solid rgb(250, 250, 202);">
-                      <p class="mt-lg-5 mb-lg-0">OUR PROMISE</p>
-                      <div class="card-body pt-lg-0 mx-lg-3">
-                          <h5 class="card-title display-5 ">TO YOU</h5>
-                          <p class="card-text my-lg-4">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
-                      </div>
-                </div><br> <br> <br>
-          </div>
-      </section> <br>   <br>
 
+
+
+      <section class="about">
+          <div class="container-fluid" style="background-color: rgba(230, 167, 86, 0.9);padding: 5rem 0; margin: 5rem 0;">
+                <div class="text-center  mx-auto  rounded" style="width: 65%; background-color: #F6E1C5;border: 5px solid #f0b369;" data-aos="flip-up">
+                  <div class=" p-lg-5">
+                    <p class="mb-lg-0" style="font-weight: bold;">OUR PROMISE</p>
+                          <h1 class="  mb-lg-4 display-4 font-weight-light">TO YOU</h1>
+                          <p class=" ">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+                  </div>
+                </div>
+          </div>
+      </section>
+
+      
       <footer>
-          <div class="container-fluid" style="background-color: #D4994F;">
-              <p class="py-lg-5 text-center mb-lg-0" >Copyright © Your Website 2021</p>
+          <div class="container-fluid" style="background-color: rgba(53, 28, 20, 0.89);">
+              <p class="py-lg-5 text-center mb-lg-0 text-light" >Copyright © Your Website 2021</p>
           </div>
       </footer>
 
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 300,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>
