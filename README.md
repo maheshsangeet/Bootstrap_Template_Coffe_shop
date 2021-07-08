@@ -2,9 +2,7 @@
 
 ## Live Preview: [Open Link](https://maheshsangeet.github.io/Bootstrap_Template_Coffee_shop/)
 
-![Uploading Screenshot (12).png…]()
-![Uploading Screenshot (12).png…]()
-
+![Screenshot (12)](https://user-images.githubusercontent.com/74812363/124970767-f607be80-e045-11eb-9006-bdfe85387eaa.png)
 
 ## Project Details
 
